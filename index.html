@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rastgele Ayet</title>
+    <script>
+        function redirectToRandomImage() {
+            var images = [
+                "https://drive.google.com/uc?id=YOUR_IMAGE_ID_1",
+                "https://drive.google.com/uc?id=YOUR_IMAGE_ID_2",
+                "https://drive.google.com/uc?id=YOUR_IMAGE_ID_3"
+            ];
+            var randomIndex = Math.floor(Math.random() * images.length);
+            window.location.href = images[randomIndex];
+        }
+    </script>
+</head>
+<body onload="redirectToRandomImage()">
+    <p>Yönlendiriliyorsunuz...</p>
+</body>
+</html>
